@@ -1,5 +1,6 @@
 # sql-data-warehouse-project
 Welcome to **SQL DataWarehouse Project** repository!
+
 This project demonstrates a comprehensive data warehouse and analytics solution, from building a data warehouse to generating actionable insigts. Designed as a portfolio project highlights industry best practices in data engineering analytics.
 
 

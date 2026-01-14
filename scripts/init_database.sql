@@ -12,12 +12,12 @@ WARNING:
   All data in the database will be permenently deleted. Proceed with caution
   and ensure you have proper backups before running this script.
 */
-Use master;
+USE master;
 GO
 
 -- Drop and recreate the 'DataWarehouse' database
-IF EXISTS (SELECT 1 from sys.databases WHERE name='DataWarehouse')
-BEGIN 
+IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouse')
+BEGIN
     ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
     DROP DATABASE DataWarehouse;
 END;
@@ -25,11 +25,12 @@ GO
 
 -- Create the 'DataWarehouse' database
 CREATE DATABASE DataWarehouse;
-Go
+GO
 
 USE DataWarehouse;
-Go
+GO
 
+-- Create Schemas
 CREATE SCHEMA bronze;
 GO
 
